@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>profile Raihan</title>
+  <link rel="stylesheet" href="Untitled-1.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="background"></div>
+
+  <header>
+    <nav>
+      <h2 class="logo">Profile</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="profile">
+      <img src="Merbabu.jpg" alt="Foto Profil">
+    </div>
+
+    <div class="intro">
+      <h1>Hi, I'm <span class="typing"></span></h1>
+      <h3>Anak Kuliah Teknik Informatika (masih Maba bang 😅)</h3>
+      <p>
+        Saya seorang Web Developer dan Editor dengan pengalaman 1 Minggu wkwk, khususnya pada Front-End.
+        Saya dapat membuat website sederhana dan juga mengedit video serta foto.
+        Saya juga tertarik dengan dunia Coding.
+      </p>
+
+      <div class="sosmed">
+        <a href="https://wa.me/qr/ZJSWRKMYCCRFL1" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/raihanrzkyyy/#" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://tiktok.com/@_raihanrzkyyy" target="_blank">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <script>
+    // Efek ngetik otomatis di nama
+    const typing = document.querySelector(".typing");
+    const text = "Muhammad Raihan Rizkyansyah";
+    let index = 0;
+
+    function typeEffect() {
+      if (index < text.length) {
+        typing.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 150);
+      }
+    }
+    typeEffect();
+  </script>
+</body>
+</html>
